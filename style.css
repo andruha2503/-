@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&family=PT+Sans:wght@400;700&display=swap');
+
+:root {
+
+    --yellow: #FCDB00;
+    --grey: #8B8A8B;
+    --black: #010101;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body {
+    height: 100%;
+}
+
+body {
+
+    font-family: 'PT Sans', sans-serif;
+    font-size: 18px;
+    line-height: 1.3em;
+    color: var(--grey)
+}
+
+.slider, .content, .footer {
+    min-height: 740px;
+    padding: 80px 0;
+}
+section {
+    display: flex;
+    
+}
+.main {
+    max-width: 1140px;
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+}
+
+.header {
+    background-color: var(--yellow);
+    color: var(--black);
+    padding: 80px 0 25px;
+    position: fixed;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+
+}
+.header .main {
+    justify-content: space-between;
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
+}
+.logo {
+    text-align: center;
+}
+.social {
+    text-align: right;
+}
+
+.slider .main {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+h1 {
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 1.4em;
+}
+
+h2 {
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 1.4em;
+}
+
+.description {
+    margin: 40px 0;
+    font-size: 27px;
+    line-height: 1.4em;
+    max-width: 754px;
+}
+
+ul {
+    list-style-type: none;
+    display: flex;
+}
+
+.os_item {
+    margin: 0 9px;
+}
+
+.slider_navs {
+    position: absolute;
+    bottom: 70px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.slider_nav {
+    width: 15px;
+    height: 15px;
+    border-radius: 50px;
+    background-color: rgb(255, 255, 255,0.5);
+    margin: 0 7.5px;
+    cursor: pointer;
+    transition-property: background-color;
+    transition-duration: 0.8s;
+}
+.slider_nav:hover {
+    background-color: rgb(255, 255, 255,1) ;
+}
+
+.social a {
+    display:inline-block;
+    margin-left: 15px;
+}
+.header .main div {
+    flex-basis: 30%;
+}
+.slider {
+    background-color: var(--yellow);
+    color: var(--black);
+    position: relative;
+}
+ .content {
+    color: var(--black);
+ }
+
+ .content .main {
+    flex-direction: column;
+    align-items: center;
+ }
+
+ .content_header {
+    text-align: center;
+ }
+
+.footer {
+    background-color: var(--black);
+    color: var(--grey);
+}
+
+
+.content_row {
+    display: flex;
+    align-items: center;
+}
+
+.content_item:nth-child(2) {
+    margin: 0 100px;
+
+}
+
+@media screen and (max-width: 768px){
+    .slider, .content, .footer{
+        min-height: 100%
+    }
+}
